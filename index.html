@@ -4,9 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather API</title>
+  <style>
+    body {
+      text-align: center;
+      
+    }
+    h1 {
+      font-size: 40px;
+    }
+
+    .temperature {
+      font-size: 40px;
+    }
+    .wind {
+      font-size: 40px;
+    }
+    .timezone {
+      font-size: 40px;
+      font-weight: 900;
+    }
+    .time {
+      font-size: 40px;
+    }
+  </style>
 </head>
 <body>
-  // YOUR HTML HERE
+  <h1>Today's Weather</h1>
+  <div class="weather_container">
+    <div class="temperature" id="temperature">
+      <p><strong><span id="temp_data"></span>°C</strong></p>
+    </div>
+    <div  class="wind" id="wind">
+      <p>Wind speed: <span id="wind_data"></span>km/h</p>
+    </div>
+    <div class="timezone" id="timezone">
+      <p id="timezone_data"></p>
+    </div>
+    <div class="time" id="time">
+      <p>Last updated: <span id="time_data"></span></p>
+    </div>
+  </div>
 
   <script src="./app.js"></script>
 </body>
